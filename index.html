@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Suibhne Sweeney</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Light Blue Theme */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff; /* White background */
+      color: #333; /* Default dark text color for readability */
+    }
+    .hero {
+      background: linear-gradient(to right, #008ad4, #62b0e3); /* Blue gradient */
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .hero img {
+      border-radius: 50%;
+      border: 5px solid white;
+      width: 150px;
+      height: 150px;
+    }
+    .modal-header {
+      background-color: #008ad4; /* Blue for the modal header */
+      color: white;
+    }
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #008ad4; /* Use exact blue for section titles */
+    }
+    footer {
+      background-color: #008ad4; /* Blue footer */
+      color: white;
+      padding: 20px 0;
+    }
+    .card-header {
+      cursor: pointer;
+      background-color: #008ad4; /* Light blue card headers */
+    }
+    .btn-primary {
+      background-color: #008ad4; /* Blue button */
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #006aa8; /* Darker blue on hover */
+    }
+    a {
+      color: #008ad4; /* Blue links */
+    }
+    a:hover {
+      color: #006aa8; /* Darker blue on hover */
+    }
+    .highlight-text {
+      color: #008ad4; /* Blue text for emphasis */
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero text-center">
+    <img src="assets/img/profile.jpeg" alt="Suibhne Sweeney">
+    <h1 class="mt-3">Suibhne Sweeney</h1>
+    <p class="lead">Computing Student | Aspiring Software Engineer</p>
+  </header>
+
+  <!-- Education Section -->
+  <div class="container my-5">
+    <h2 class="section-title text-center">Education & Module Grades</h2>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>BSc (Hons) in Computing</strong> - Technological University Dublin</li>
+      <li class="list-group-item">Overall Grade: <span class="highlight-text">3.54</span></li>
+      <li class="list-group-item">Key Modules:
+        <ul>
+          <li>3rd Year: Cloud Services, Data Structures, Web Development, Operating Systems</li>
+          <li>2nd Year: Software Development, Advanced Databases, Data Analysis</li>
+          <li>1st Year: Programming, Visual Design, Critical Skills Development</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="container my-5">
+    <h2 class="section-title text-center">Projects</h2>
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Project -->
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Website</h5>
+              <p class="card-text">Developed a full-stack e-commerce platform for building and purchasing custom PCs. Integrated payment gateways and inventory management.</p>
+              <p><strong>Technologies:</strong> Django, REST APIs (Stripe), JavaScript, Bootstrap</p>
+              <p><strong>Challenges:</strong> Implementing a custom PC builder, optimizing UI for better user experience.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Project -->
+        <div class="carousel-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">MasterCart Hackathon</h5>
+              <p class="card-text">Led a team in creating an e-commerce solution that integrated secure payment systems directly into shopping carts.</p>
+              <p><strong>Technologies:</strong> JavaScript, ARIA, APIs (Stripe, PayPal), HTML, CSS</p>
+              <p><strong>Challenges:</strong> Ensuring data security and seamless integration with existing e-commerce platforms.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Project -->
+        <div class="carousel-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Accessibility Testing Tool</h5>
+              <p class="card-text">Developed a tool to identify and fix accessibility errors in web applications, ensuring compliance with WCAG standards during the Mastercard internship.</p>
+              <p><strong>Technologies:</strong> JavaScript, ARIA, HTML, CSS, Selenium</p>
+              <p><strong>Challenges:</strong> Creating an automated testing tool that could identify accessibility issues in dynamically rendered content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Work Placement Section -->
+  <div class="container my-5">
+    <h2 class="section-title text-center">Work Placement</h2>
+    
+    <!-- Mastercard Internship -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#mastercardDetails" aria-expanded="true" aria-controls="mastercardDetails">
+        <strong>Mastercard Internship (Jan 2024 - Jun 2024)</strong>
+      </div>
+      <div id="mastercardDetails" class="collapse show">
+        <div class="card-body">
+          <ul>
+            <li>Developed an accessibility testing tool that detected issues with screen reader compatibility and keyboard navigation.</li>
+            <li>Integrated accessibility features into existing applications, ensuring compliance with WCAG 2.1 standards.</li>
+            <li>Collaborated with cross-functional teams to enhance user experience through Figma and Jira.</li>
+            <li>Contributed to a high-impact hackathon project that integrated secure payment systems into e-commerce platforms.</li>
+            <li>Optimized backend processes to improve the efficiency of the automated testing tool.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Student Computing Tutor -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#tutorDetails" aria-expanded="false" aria-controls="tutorDetails">
+        <strong>Student Computing Tutor (Jul 2023 - Aug 2023)</strong>
+      </div>
+      <div id="tutorDetails" class="collapse">
+        <div class="card-body">
+          <ul>
+            <li>Provided one-on-one tutoring for software development and database management skills.</li>
+            <li>Assisted students with problem-solving techniques for software development challenges.</li>
+            <li>Created additional learning resources such as guides and tutorials for complex programming concepts.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="container my-5">
+    <h2 class="section-title text-center">Skills</h2>
+
+    <!-- Programming Languages -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#programmingLanguages" aria-expanded="true" aria-controls="programmingLanguages">
+        <strong>Programming Languages</strong>
+      </div>
+      <div id="programmingLanguages" class="collapse show">
+        <div class="card-body">
+          <ul>
+            <li>Python</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>SQL (PostgreSQL, SQLite, MongoDB)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#webDevelopment" aria-expanded="false" aria-controls="webDevelopment">
+        <strong>Web Development</strong>
+      </div>
+      <div id="webDevelopment" class="collapse">
+        <div class="card-body">
+          <ul>
+            <li>Django, MERN Stack</li>
+            <li>HTML5, CSS3, Bootstrap</li>
+            <li>APIs (RESTful, Stripe)</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Frameworks -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#toolsFrameworks" aria-expanded="false" aria-controls="toolsFrameworks">
+        <strong>Tools & Frameworks</strong>
+      </div>
+      <div id="toolsFrameworks" class="collapse">
+        <div class="card-body">
+          <ul>
+            <li>Selenium, Jest (Testing)</li>
+            <li>Figma, Adobe XD (UI/UX Design)</li>
+            <li>Jira, Trello (Project Management)</li>
+            <li>Docker, Kubernetes (Containerization)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Science -->
+    <div class="card mb-3">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#dataScience" aria-expanded="false" aria-controls="dataScience">
+        <strong>Data Science</strong>
+      </div>
+      <div id="dataScience" class="collapse">
+        <div class="card-body">
+          <ul>
+            <li>Pandas, NumPy, Scikit-Learn (Data Analysis & Machine Learning)</li>
+            <li>Data Visualization (Matplotlib, Seaborn)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interests Section -->
+  <div class="container my-5">
+    <h2 class="section-title text-center">Hobbies & Interests</h2>
+    <div class="text-center">
+      <p>Building Raspberry Pi drones, playing violin and piano, participating in hackathons, exploring machine learning and AI technologies, and contributing to open-source projects.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container my-5 text-center">
+    <h2 class="section-title">Contact Me</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Get in Touch</button>
+    
+    <!-- Download CV Button -->
+    <div class="mt-4">
+      <a href="assets/SuibhneSweeney.pdf" download class="btn btn-outline-primary">
+        Download My CV
+      </a>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Email:</strong> X00186781@mytudublin.ie</p>
+          <p><strong>Phone:</strong> +353 834886939</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suibhne-sweeney-233449230/" target="_blank">View Profile</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/suibhne-sweeney" target="_blank">View Repositories</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Suibhne Sweeney. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
