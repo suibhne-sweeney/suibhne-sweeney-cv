@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff; /* white background i think should be ok*/
+    color: #333; 
+  }
+  .hero {
+    background: linear-gradient(to right, #008ad4, #62b0e3);
+    color: #fff;
+    padding: 60px 20px;
+  }
+  .hero img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+  }
+  .modal-header {
+    background-color: #008ad4;
+    color: white;
+  }
+  .section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #008ad4; 
+  }
+  footer {
+    background-color: #008ad4;
+    color: white;
+    padding: 20px 0;
+  }
+  .card-header {
+    cursor: pointer;
+    background-color: #008ad4; 
+  }
+  .btn-primary {
+    background-color: #008ad4; 
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #006aa8;
+  }
+  a {
+    color: #008ad4; /* make the links blue */
+  }
+  a:hover {
+    color: #006aa8;
+  }
+  .highlight-text {
+    color: #008ad4; 
+  }
